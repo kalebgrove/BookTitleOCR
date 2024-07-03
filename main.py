@@ -94,26 +94,12 @@ def process_folder(folder_path):
 
             # Extract title from Google
             title = get_book_title(text)
-            #title = extract_title_from_google(text)
 
             # Extraxt author from Google
             author = get_book_author(text)
 
-            # Append the result
-            #results.append({
-            #    'Title': title,
-            #    'Author': author,
-            #    'Genre': genre
-            #})
             print(f"{title} by {author} {genres}")
 
-    # Save results to a spreadsheet
-    #df = pd.DataFrame(results)
-    #df.to_excel('book_info.xlsx', index=False)
-
-
-
-
 # Specify the folder path
-folder_path = r'C:\Users\kwolf\OneDrive\Desktop\Projects\BookReader\Books'
+folder_path = r'specify-folder'
 process_folder(folder_path)
